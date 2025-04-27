@@ -1,77 +1,327 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma page d'accueil</title>
-    <link  rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script  defer src="page.js"> </script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTS SIO - Portfolio</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/bts.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
   <body>
-    <nav class="navbar">
+    <div id="navbar"></div>
 
-      <h1>Nassim EZZEYADI</h1>
-    
-      <ul>
-        <li class="top"><a href="index.html">Accueil</a></li>
-        <li class="top"><a href="#">BTS SIO</a></li>
-        <li class="top"><a href="#">Ecole</a></li>
-        <li class="top"><a href="#">Entreprise</a></li>
-        <li class="top"><a href="#">Veille</a></li>
-      </ul>
+    <section class="bts">
+      <h2 class="bts-message">BTS Services Informatiques aux Organisations</h2>
+    </section>
 
-      <button class="toggle"></button>
+    <main class="container">
+      <section class="bts-intro">
+        <h3>Le BTS SIO</h3>
+        <div class="bts-content">
+          <div class="bts-text">
+            <p>
+              Le
+              <strong
+                >BTS Services Informatiques aux Organisations (SIO)</strong
+              >
+              est une formation de niveau Bac+2 qui prépare aux métiers de
+              l'informatique. Cette formation se déroule sur deux ans et offre
+              une approche tant théorique que pratique des compétences requises
+              pour travailler dans le domaine de l'IT.
+            </p>
+            <p>
+              Le BTS SIO propose deux spécialités distinctes à partir de la
+              première année :
+            </p>
+            <ul class="bts-options">
+              <li>
+                <span class="option-name">SLAM</span> : Solutions Logicielles et
+                Applications Métiers
+              </li>
+              <li>
+                <span class="option-name">SISR</span> : Solutions
+                d'Infrastructure, Systèmes et Réseaux
+              </li>
+            </ul>
+            <p class="my-choice">
+              J'ai choisi l'option <strong>SLAM</strong> qui correspond
+              davantage à mon projet professionnel orienté vers le développement
+              d'applications et la conception de solutions logicielles.
+            </p>
+          </div>
+          <div class="bts-image">
+            <img
+              src="./assets/PersonneCodage.png"
+              alt="BTS SIO"
+              class="rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
 
-    </nav>
-    
-            <div class="containerbts">
-            
-                
-                <h3 class="titre"> Présentation du bts SIO</h3>
-                
-                    <div class="paragraphe">
-                        <p>Le BTS SIO - Brevet du Technicien Supérieur Services Informatiques aux Organisations - 
-                        se prépare sur une période de deux ans et s'adresse aux personnes qui souhaitent devenir
-                        développeur ou s'orienter dans l'administration des systèmes et réseaux. Pour ma part, 
-                        j'ai choisi de faire un BTS SIO pour m'orienter dans la première option. Pendant la première 
-                        année, j'ai suivi des cours en développement et en réseau, mon choix s'est ainsi confirmé sur l'option SLAM.
-                        <br> <br><h4>Les débouchés</h4>
-                      </p>
-                    </div> 
-                 <div class="cards">
-                    <div class="card1">
-                      <h5> <u> Option SISR</u></h5>
-                      <ul>
-                          <li>Technicien de production</li>
-                          <li>Technicien d’infrastructure</li>
-                          <li>Technicien systèmes et réseaux</li>
-                          <li>Support systèmes et réseaux</li>
-                          <li>Pilote d’exploitation</li>
-                          <li>Informaticien support et déploiement</li>
-                        </ul>
-                    </div>  
-                    <div class="card2">
-                      <h5> <u> Option SLAM</u></h5>
-                      <ul>
-                          <li>Développeur informatique</li>
-                          <li>Développeur d'applications informatiques</li>
-                          <li>Analyste programmeur</li>
-                          <li>Responsable des services applicatifs</li>
-                          <li>Technicien d'études informatiques</li>
-                          <li>Informaticien d'études</li>
-                        </ul>
-                    </div> 
-                  </div>
-            </div>
+    <div class="specialties-container">
+      <h3 class="specialties-title">Les spécialités et leurs débouchés</h3>
 
-    
-    
+      <div class="specialties-cards">
+        <!-- Card SLAM -->
+        <div class="specialty-card slam-card">
+          <div class="card-header">
+            <h4>SLAM</h4>
+            <p class="card-subtitle">
+              Solutions Logicielles et Applications Métiers
+            </p>
+          </div>
+          <div class="card-content">
+            <p class="card-description">
+              L'option SLAM forme des spécialistes du développement de
+              logiciels, principalement des applications d'entreprise.
+            </p>
+            <h5>Débouchés professionnels</h5>
+            <ul class="job-list">
+              <li>
+                <svg
+                  class="job-icon"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                  ></path>
+                </svg>
+                Développeur d'applications informatiques
+              </li>
+              <li>
+                <svg
+                  class="job-icon"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                  ></path>
+                </svg>
+                Programmeur d'applications mobiles
+              </li>
+              <li>
+                <svg
+                  class="job-icon"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                  ></path>
+                </svg>
+                Développeur web
+              </li>
+              <li>
+                <svg
+                  class="job-icon"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                  ></path>
+                </svg>
+                Concepteur d'applications
+              </li>
+              <li>
+                <svg
+                  class="job-icon"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                  ></path>
+                </svg>
+                Analyste programmeur
+              </li>
+              <li>
+                <svg
+                  class="job-icon"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                  ></path>
+                </svg>
+                Développeur DevOps
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card SISR -->
+        <div class="specialty-card sisr-card">
+          <div class="card-header">
+            <h4>SISR</h4>
+            <p class="card-subtitle">
+              Solutions d'Infrastructure, Systèmes et Réseaux
+            </p>
+          </div>
+          <div class="card-content">
+            <p class="card-description">
+              L'option SISR forme des professionnels des réseaux et équipements
+              informatiques capables de gérer et d'assurer la maintenance d'un
+              parc informatique.
+            </p>
+            <h5>Débouchés professionnels</h5>
+            <ul class="job-list">
+              <li>
+                <svg
+                  class="job-icon"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                  ></path>
+                </svg>
+                Administrateur systèmes et réseaux
+              </li>
+              <li>
+                <svg
+                  class="job-icon"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                  ></path>
+                </svg>
+                Technicien support informatique
+              </li>
+              <li>
+                <svg
+                  class="job-icon"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                  ></path>
+                </svg>
+                Technicien d'infrastructure
+              </li>
+              <li>
+                <svg
+                  class="job-icon"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                  ></path>
+                </svg>
+                Responsable sécurité informatique
+              </li>
+              <li>
+                <svg
+                  class="job-icon"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                  ></path>
+                </svg>
+                Pilote d'exploitation
+              </li>
+              <li>
+                <svg
+                  class="job-icon"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                  ></path>
+                </svg>
+                Administrateur cloud
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Suivez-moi sur :
+        <a href="https://github.com/NassimEzzeyadi" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/ezzeyadinassim/" target="_blank"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+
+
+    <script src="page.js"></script>
+    <script src="./utiles/navbar.js"></script>
   </body>
-  </html>
-
-
-</body>
 </html>

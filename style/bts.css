@@ -1,0 +1,220 @@
+/* CSS spécifique pour la page BTS */
+.bts-intro {
+    margin-bottom: 30px;
+  }
+  
+  .bts-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .bts-text {
+    flex: 1;
+  }
+  
+  .bts-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align:justify;
+  }
+  
+  .bts-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bts-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bts-options {
+    list-style: none;
+    padding-left: 20px;
+    margin: 15px 0;
+  }
+  
+  .bts-options li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .bts-options li:before {
+    content: "•";
+    color: #0056b3;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+  
+  .option-name {
+    font-weight: bold;
+    color: #0056b3;
+  }
+  
+  .my-choice {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 86, 179, 0.1);
+    border-left: 4px solid #0056b3;
+    border-radius: 4px;
+  }
+  
+  /* Styles pour les cards de spécialités */
+  .specialties-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 15px;
+  }
+  
+  .specialties-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .specialties-cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .specialty-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .specialty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .slam-card .card-header {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+  .sisr-card .card-header {
+    background-color: #006400;
+    color: #fff;
+  }
+  
+  .card-header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-header h4 {
+    font-size: 26px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .card-subtitle {
+    font-size: 14px;
+    margin-top: 5px;
+    opacity: 0.9;
+  }
+  
+  .card-content {
+    padding: 25px;
+  }
+  
+  .card-description {
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+  
+  .card-content h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+  }
+  
+  .job-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .job-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+  }
+  
+  .job-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .job-icon {
+    margin-right: 10px;
+    color: #0056b3;
+  }
+  
+  .sisr-card .job-icon {
+    color: #006400;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 992px) {
+    .bts-content {
+      flex-direction: column;
+    }
+    
+    .specialties-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .specialty-card {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .job-list li {
+      font-size: 14px;
+    }
+}
+    
+    .bts {
+        position: relative; /* Définit un contexte pour les enfants absolus */
+        text-align: center;
+        margin-bottom: 80px;
+        margin-top: 80px;
+        width: 100%;
+        height: auto; /* Ajuste la hauteur selon le contenu */
+      }
+      
+      .bts-message {
+        position: absolute; /* Permet un placement précis */
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #333;
+        opacity: 0;
+        animation: fadeInSlideDown 1.5s ease-out forwards;
+      }
+  

@@ -1,0 +1,141 @@
+/* CSS spécifique pour la page Veille */
+.veille-intro {
+    margin-bottom: 30px;
+  }
+  
+  .veille-content {
+    margin-top: 20px;
+  }
+  
+  .veille-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  /* Animation titre comme sur la page BTS */
+  .veille {
+    position: relative;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .veille-message {
+    position: absolute; /* Permet un placement précis */
+        top: 50%;
+        left: 41%;
+        transform: translate(-50%, -50%);
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #333;
+        opacity: 0;
+        animation: fadeInSlideDown 1.5s ease-out forwards;
+  }
+  
+ 
+  
+  /* Styles pour les cartes de veille - similaires aux cards de votre page BTS */
+  .mes-veilles, .mes-outils {
+    margin: 40px 0;
+  }
+  
+  .veilles-cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .veille-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .veille-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .veille-card-header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .veille-card-header h4 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .veille-card-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .veille-card-body p {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .pdf-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .pdf-link:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .pdf-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .veille-placeholder .veille-card-header {
+    background-color: #6c757d;
+  }
+  
+  .outils-card-container {
+    justify-content: center;
+  }
+  
+  .outils-card-container .veille-card {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  
+  
+  /* Responsive design */
+  @media (max-width: 992px) {
+    .veilles-cards {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .veille-card {
+      max-width: 100%;
+    }
+  }
